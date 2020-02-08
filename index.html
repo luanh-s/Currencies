@@ -11,40 +11,184 @@
             background-color: #f7f7f7;
         }
         
-        .frame1 {
-            border: 0px none;
-            width: 100vw;
-            height: 42vh;
-            z-index: 2;
-            position: absolute;
-            left: 0px;
-            top: -60px;
-            max-height: 42vh;
+        @media (max-width: 640px) {
+            .frame1 {
+                border: 0px none;
+                width: 100vw;
+                height: calc(300px - 2vw);
+                z-index: 2;
+                position: absolute;
+                left: 0px;
+                top: -30px;
+                max-height: 300px;
+            }
+            .frame2 {
+                border: 0px none;
+                width: 100vw;
+                height: calc(300px - 2vw);
+                position: absolute;
+                left: 0px;
+                top: calc(300px - 30px);
+                max-height: 300px;
+            }
+            #ads {
+                background: #f7f7f7;
+                width: 100vw;
+                height: calc(100vh - 540px);
+                position: absolute;
+                top: 540px;
+                left: 0;
+                z-index: 3;
+                display: none;
+                /* background: #f7f7f7;
+                width: 100vw;
+                height: calc(100vh - 540px);
+                position: absolute;
+                top: calc(100vh - 250px);
+                left: 0;
+                z-index: 3; */
+            }
+            .encapDiv {
+                border: 0px none;
+                width: 100vw;
+                height: 300px;
+            }
         }
         
-        .frame2 {
-            border: 0px none;
-            width: 100vw;
-            height: 42vh;
-            position: absolute;
-            left: 0px;
-            top: calc(42vh - 120px);
-            max-height: 42vh;
+        @media (min-width: 641px) {
+            .frame1 {
+                border: 0px none;
+                width: 100vw;
+                height: calc(170px + 14vw);
+                z-index: 2;
+                position: absolute;
+                left: 0px;
+                top: -60px;
+            }
+            .frame2 {
+                border: 0px none;
+                width: 100vw;
+                height: calc(170px + 14vw);
+                position: absolute;
+                left: 0px;
+                top: calc(180px - 5vw);
+            }
+            .encapDiv {
+                border: 0px none;
+                width: 100vw;
+                height: 42vh;
+            }
+            #ads {
+                background: #f7f7f7;
+                width: 100vw;
+                height: 20vh;
+                position: absolute;
+                top: 80vh;
+                z-index: 3;
+                display: none;
+            }
         }
         
-        .encapDiv {
-            border: 0px none;
-            width: 100vw;
-            height: 42vh;
+        @media (min-width: 780px) {
+            .frame1 {
+                border: 0px none;
+                width: 100vw;
+                height: calc(170px + 14vw);
+                z-index: 2;
+                position: absolute;
+                left: 0px;
+                top: -60px;
+            }
+            .frame2 {
+                border: 0px none;
+                width: 100vw;
+                height: calc(178px + 14vw);
+                position: absolute;
+                left: 0px;
+                top: calc(55px + 14vw);
+            }
+            .encapDiv {
+                border: 0px none;
+                width: 100vw;
+                height: 42vh;
+            }
+            #ads {
+                background: #f7f7f7;
+                width: 100vw;
+                height: 20vh;
+                position: absolute;
+                top: 80vh;
+                z-index: 3;
+                display: none;
+            }
         }
         
-        #ads {
-            background: #f7f7f7;
-            width: 100vw;
-            height: 26vh;
-            position: absolute;
-            top: 74vh;
-            z-index: 3;
+        @media (min-width: 880px) {
+            .frame1 {
+                border: 0px none;
+                width: 100vw;
+                height: calc(190px + 14vw);
+                z-index: 2;
+                position: absolute;
+                left: 0px;
+                top: -60px;
+            }
+            .frame2 {
+                border: 0px none;
+                width: 100vw;
+                height: calc(190px + 14vw);
+                position: absolute;
+                left: 0px;
+                top: calc(70px + 14vw);
+            }
+            .encapDiv {
+                border: 0px none;
+                width: 100vw;
+                height: 42vh;
+            }
+            #ads {
+                background: #f7f7f7;
+                width: 100vw;
+                height: 20vh;
+                position: absolute;
+                top: 80vh;
+                z-index: 3;
+                display: none;
+            }
+        }
+        
+        @media (min-width: 1020px) {
+            .frame1 {
+                border: 0px none;
+                width: 100vw;
+                height: calc(190px + 14vw);
+                z-index: 2;
+                position: absolute;
+                left: 0px;
+                top: -60px;
+            }
+            .frame2 {
+                border: 0px none;
+                width: 100vw;
+                height: calc(220px + 14vw);
+                position: absolute;
+                left: 0px;
+                top: calc(70px + 14vw);
+            }
+            .encapDiv {
+                border: 0px none;
+                width: 100vw;
+                height: 42vh;
+            }
+            #ads {
+                background: #f7f7f7;
+                width: 100vw;
+                height: 20vh;
+                position: absolute;
+                top: 80vh;
+                z-index: 3;
+                display: none;
+            }
         }
     </style>
 </head>
