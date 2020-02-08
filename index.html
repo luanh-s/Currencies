@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            overflow: hidden;
+            background-color: #f7f7f7;
+        }
+        
+        .frame1 {
+            border: 0px none;
+            width: 100vw;
+            height: 42vh;
+            z-index: 2;
+            position: absolute;
+            left: 0px;
+            top: -60px;
+            max-height: 42vh;
+        }
+        
+        .frame2 {
+            border: 0px none;
+            width: 100vw;
+            height: 42vh;
+            position: absolute;
+            left: 0px;
+            top: calc(42vh - 120px);
+            max-height: 42vh;
+        }
+        
+        .encapDiv {
+            border: 0px none;
+            width: 100vw;
+            height: 42vh;
+        }
+        
+        #ads {
+            background: #f7f7f7;
+            width: 100vw;
+            height: 26vh;
+            position: absolute;
+            top: 74vh;
+            z-index: 3;
+        }
+    </style>
+</head>
+
+<body data-gr-c-s-loaded="true">
+    <div class="encapDiv">
+        <iframe name="frame_1" src="https://dolarhoje.com/euro-hoje/" class="frame1" scrolling="no"></iframe>
+    </div>
+    <div class="encapDiv">
+        <iframe name="frame_2" src="https://dolarhoje.com/" class="frame2" scrolling="no"></iframe>
+    </div>
+    <div id="ads">
+
+    </div>
+
+    <!-- <div style="border: 0px none;width: 100vw; height: 50vh;position: absolute;top: calc(48vh - 120px)">
+        <iframe name="frame_2" src="https://dolarhoje.com/" style="border: 0px none;width: 100vw;height: 48vh;overflow-y: hidden;left: 0px;" id="frame_2" scrolling="no"></iframe>
+    </div> -->
+
+</body>
+
+</html>
